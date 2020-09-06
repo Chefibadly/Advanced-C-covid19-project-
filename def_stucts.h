@@ -1,0 +1,9 @@
+#ifndef DEF_STUCTS_H_INCLUDED
+#define DEF_STUCTS_H_INCLUDED
+
+
+
+#endif // DEF_STUCTS_H_INCLUDED
+
+
+

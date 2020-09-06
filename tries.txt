@@ -1,0 +1,60 @@
+void appendM(CelluleMaladie** head_ref, listeM new_data)
+{
+
+    CelluleMaladie new_node = ( CelluleMaladie) malloc(sizeof( ListeMaladies));
+
+    CelluleMaladie last = *head_ref;
+
+
+
+    new_node->maladies=new_data;
+
+
+
+    new_node->suivant = NULL;
+
+
+    if (*head_ref == NULL)
+    {
+       *head_ref = new_node;
+       return;
+    }
+
+
+    while (last->suivant != NULL)
+       last = last->suivant;
+
+
+    last->suivant = new_node;
+    return;
+}
+void append(Lista** head_ref, Cellule new_data)
+{
+
+    Lista new_node = ( Lista) malloc(sizeof( ListePersonnesInfectees));
+
+    Lista last = *head_ref;
+
+
+
+    new_node->cellule=new_data;
+
+
+
+    new_node->suivant = NULL;
+
+
+    if (*head_ref == NULL)
+    {
+       *head_ref = new_node;
+       return;
+    }
+
+
+    while (last->suivant != NULL)
+       last = last->suivant;
+
+
+    last->suivant = new_node;
+    return;
+}

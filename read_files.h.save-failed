@@ -1,0 +1,31 @@
+#ifndef READ_FILES_H_INCLUDED
+#define READ_FILES_H_INCLUDED
+
+#include<stdio.h>
+#include"def_stucts.h"
+
+#endif // READ_FILES_H_INCLUDED
+
+
+ListePersonnesInfectees charger_Personnes (char *nomFichierPersonnes, char* nomFichierMaladies)
+{
+    FILE *infile;
+    struct PersonneInfecte input;
+
+    // Open person.dat for reading
+    infile = fopen (*nomFichierPersonnes, "r");
+    if (infile == NULL)
+    {
+        fprintf(stderr, "\nError opening file\n");
+        exit (1);
+    }
+
+    // read file contents till end of file
+    while(fread(&input, sizeof(struct person), 1, infile))
+        printf ("CIN = %d name = %s %s\n", input.id,input.fname, input.lname);
+
+    // close file
+    fclose (infile);
+
+    return 0;
+}

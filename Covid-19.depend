@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1590493477 source:c:\users\chedly\desktop\c&asd project\covid-19\main.c
+	<tchar.h>
+	<myconio.h>
+	<stdio.h>
+	<windows.h>
+
+1585312163 c:\users\chedly\desktop\c&asd project\covid-19\read_files.h
+
+1592830737 source:c:\users\chedly\desktop\c\c&asd project\covid-19\main.c
+	<tchar.h>
+	<myconio.h>
+	<stdio.h>
+	<windows.h>
+
